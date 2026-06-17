@@ -1,0 +1,529 @@
+[
+  {
+    "query_n": 1,
+    "user_input": "there's a warning triangle on the dashboard",
+    "reference": "A warning triangle indicates a general failure. The warning light comes on when the system detects a fault. Go to a Fiat Dealership to have the system checked.",
+    "relevant_pages": [
+      52
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 2,
+    "user_input": "I see an oil can light on my dashboard",
+    "reference": "The oil can light indicates insufficient engine oil or pressure. If it comes on while driving, stop the engine immediately and contact a Fiat Dealership.",
+    "relevant_pages": [
+      44,
+      45
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 3,
+    "user_input": "oil can with waves underneath on my dashboard",
+    "reference": "The oil can with waves indicates the engine oil level has fallen below the minimum recommended value. Restore the correct engine oil level as soon as possible.",
+    "relevant_pages": [
+      43
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 4,
+    "user_input": "there's a horseshoe shape with an exclamation mark on the dashboard",
+    "reference": "A horseshoe shape with an exclamation mark indicates a tyre pressure warning. Check tyre pressures and inflate to the correct values as indicated in the manual.",
+    "relevant_pages": [
+      55,
+      62
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 5,
+    "user_input": "a spanner symbol appeared on my display",
+    "reference": "A spanner symbol indicates that scheduled servicing is due. Contact a Fiat Dealership to have the vehicle serviced.",
+    "relevant_pages": [
+      57
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 6,
+    "user_input": "check engine light came on",
+    "reference": "The check engine light indicates a failure in the injection or EOBD system. If it stays on while driving it may cause loss of performance and high fuel consumption. Contact a Fiat Dealership as soon as possible.",
+    "relevant_pages": [
+      49
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 7,
+    "user_input": "there's a snowflake light on",
+    "reference": "The snowflake light indicates possible ice on the road. The outside temperature is at or below 3 degrees Celsius. Drive with extreme caution.",
+    "relevant_pages": [
+      57
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 8,
+    "user_input": "I see a light with ABS written on it",
+    "reference": "The ABS light indicates the ABS system is inefficient. The braking system maintains efficiency but without the ABS advantage. Drive carefully and contact a Fiat Dealership as soon as possible.",
+    "relevant_pages": [
+      48, 59
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 9,
+    "user_input": "there's a little car with a padlock symbol",
+    "reference": "A car with a padlock symbol indicates a Fiat Code system failure. The system prevents the engine from being started with an unrecognised key. Contact a Fiat Dealership.",
+    "relevant_pages": [
+      50
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 10,
+    "user_input": "seatbelt light is on",
+    "reference": "The seatbelt warning light indicates that one or more seat belts are not fastened. Fasten all seat belts before driving.",
+    "relevant_pages": [
+      41
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 11,
+    "user_input": "my car won't start",
+    "reference": "If the engine does not start at the first attempt, return the key to STOP before repeating. If warning lights stay on, retry with other keys. If still unable to start, contact a Fiat Dealership.",
+    "relevant_pages": [
+      81,
+      12,
+      4,
+      108
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 12,
+    "user_input": "the car is getting hot",
+    "reference": "If the engine coolant temperature warning light comes on, stop the vehicle and switch off the engine. Check the coolant level and top up if below the MIN mark. If the light comes on again after restarting, contact a Fiat Dealership.",
+    "relevant_pages": [
+      46
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 13,
+    "user_input": "what does the hill holder system failure light mean",
+    "reference": "The hill holder system failure light comes on when the ignition key is turned to MAR in the event of a hill holder system failure, but should go off after a few seconds. If it stays on, contact a Fiat Dealership as soon as possible.",
+    "relevant_pages": [
+      50
+    ],
+    "category": "icon",
+    "enrichment_expected": false
+},
+  {
+    "query_n": 14,
+    "user_input": "I hear a grinding noise when I brake",
+    "reference": "Grinding noise when braking may indicate worn brake pads. The brake pad wear warning light may also come on. Contact a Fiat Dealership to have the brakes inspected.",
+    "relevant_pages": [
+      53,
+      111
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 15,
+    "user_input": "I have a flat tyre",
+    "reference": "In the event of a flat tyre, stop the vehicle safely and replace with the spare tyre or use the tyre repair kit if provided. The tyre pressure warning light may also be on.",
+    "relevant_pages": [
+      55,
+      106
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 16,
+    "user_input": "why does the engine lose power while driving",
+    "reference": "I could not find this in the manual.",
+    "relevant_pages": [49],
+    "category": "symptom",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 17,
+    "user_input": "engine keeps cutting out",
+    "reference": "Engine cutting out may indicate a fuel system fault or ignition issue. Check the engine warning light. If the problem persists, contact a Fiat Dealership.",
+    "relevant_pages": [
+      49,
+      81
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 18,
+    "user_input": "I think I'm using too much fuel",
+    "reference": "High fuel consumption may indicate an injection or EOBD system failure causing high exhaust emissions and poor driveability. Fuel consumption also varies significantly with route type, traffic conditions, weather, driving style, car load, and use of the climate control system.",
+        "relevant_pages": [
+      49,
+      153
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 19,
+    "user_input": "there's smoke coming from the engine",
+    "reference": "If the engine overheats, stop the car and switch off the engine. Check that the coolant level in the reservoir is between the MIN and MAX marks. Top up if necessary. Do not restart until the engine has cooled. If the warning light comes on again after restarting, contact a Fiat Dealership.",
+        "relevant_pages": [
+      46
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 20,
+    "user_input": "what does the ABS failure light mean",
+    "reference": "The ABS failure light indicates the ABS system is inefficient. The braking system maintains its efficiency but without the ABS advantage. Drive carefully and contact a Fiat Dealership as soon as possible.",
+    "relevant_pages": [
+      48,
+      59,
+      60
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 21,
+    "user_input": "engine coolant temperature warning",
+    "reference": "The engine coolant temperature warning light comes on when the coolant temperature is too high. Stop the engine and check the coolant level. Contact a Fiat Dealership if the problem persists.",
+    "relevant_pages": [
+      46
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 22,
+    "user_input": "how do I lock the doors from the inside",
+    "reference": "Press button A to lock and unlock all doors from the inside. The LED on the button indicates whether the doors are locked or unlocked.",
+    "relevant_pages": [
+      13
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 23,
+    "user_input": "DPF cleaning light is on",
+    "reference": "The DPF cleaning light indicates the particulate trap is being regenerated. Keep the vehicle moving until the light switches off. The process lasts approximately 15 minutes at 60 km/h.",
+    "relevant_pages": [
+      45,
+      51
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 24,
+    "user_input": "ESC system failure",
+    "reference": "The ESC failure light indicates the Electronic Stability Control system is inefficient. Drive carefully and contact a Fiat Dealership as soon as possible.",
+    "relevant_pages": [
+      50,
+      59
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 25,
+    "user_input": "how do I open the boot",
+    "reference": "The luggage compartment can be opened by pressing the dedicated button on the key remote control or by using the external handle.",
+    "relevant_pages": [
+      11,
+      15
+    ],
+    "category": "component",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 26,
+    "user_input": "my blinker is not working",
+    "reference": "If a direction indicator is not working, it may indicate a bulb failure. The external light failure warning light may come on. Replace the faulty bulb or contact a Fiat Dealership.",
+    "relevant_pages": [
+      19,
+      53,
+      56
+    ],
+    "category": "component",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 27,
+    "user_input": "what does the glow plug heating light mean",
+    "reference": "The glow plug heating light comes on when the ignition key is turned to MAR on Multijet versions. It should switch off after a few seconds when the engine is warm enough to start. If it stays on, do not start the engine until it goes off.",
+    "relevant_pages": [50],
+    "category": "icon",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 28,
+    "user_input": "the handbrake warning is on",
+    "reference": "The handbrake warning light comes on when the handbrake is engaged or if brake fluid level is low. Release the handbrake before driving. If the light stays on while driving, check brake fluid level immediately.",
+    "relevant_pages": [
+      42,
+      61
+    ],
+    "category": "component",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 29,
+    "user_input": "the gearbox isn't working",
+    "reference": "CHECK The Dualogic gearbox fault light indicates a gearbox failure. Messages such as reduce gear changes or clutch overheating may also appear. Contact a Fiat Dealership as soon as possible.",
+    "relevant_pages": [
+      47
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 30,
+    "user_input": "Why are my brakes squeaking?",
+    "reference": "Squeaking brakes may indicate brake pad wear. The brake pad wear warning light may also come on. Contact a Fiat Dealership to have the braking system inspected.",
+    "relevant_pages": [
+      53
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 31,
+    "user_input": "Why is my battery draining quickly?",
+    "reference": "Battery drain may be caused by accessories left connected to the vehicle power sockets with the engine off. Unplug accessories when the engine is not running. If the battery warning light is on contact a Fiat Dealership.",
+    "relevant_pages": [
+      82,
+      108,
+      109,
+      175,
+      44
+    ],
+    "category": "symptom",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 32,
+    "user_input": "Why are strange smells coming from my car?",
+    "reference": "Strange smells may indicate engine overheating or oil issues. If the coolant temperature warning light comes on, stop the engine immediately and check the coolant level. If the low battery charge light is on, contact a Fiat Dealership. Check engine oil level regularly between MIN and MAX on the dipstick.",
+        "relevant_pages": [
+      46,
+      44
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 33,
+    "user_input": "can I disable the Stop and Start system",
+    "reference": "The Stop/Start system can be deactivated using the dedicated button. If climate comfort is to be favoured, the Stop/Start system can be disabled for continuous operation of the climate control system.",
+    "relevant_pages": [86],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 34,
+    "user_input": "Why does my car make noise when turning?",
+    "reference": "Noise when turning may indicate a fault in the power steering system. The Dualdrive electric power steering failure light may come on. Contact a Fiat Dealership as soon as possible.",
+    "relevant_pages": [
+      56,
+      44
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 35,
+    "user_input": "Why is my car leaking fluid?",
+"reference": "If the brake fluid warning light comes on, the brake fluid level has fallen below the minimum, possibly due to a leak in the circuit. Stop the vehicle immediately and contact a Fiat Dealership. Also check engine coolant level and engine oil level and top up if below the MIN mark.",
+    "relevant_pages": [
+      42,
+      46,
+      44
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 36,
+    "user_input": "Why does my transmission shift roughly?",
+    "reference": "Rough gear shifting may indicate a Dualogic gearbox fault. The gearbox fault light may come on along with a message on the display. Contact a Fiat Dealership as soon as possible.",
+    "relevant_pages": [
+      47
+    ],
+    "category": "symptom",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 37,
+    "user_input": "how do I check the engine oil level",
+    "reference": "Check the oil level a few minutes after the engine has stopped, with the car parked on level ground. Check that the level is between the MIN and MAX references on the dipstick. If close to or below MIN, add oil via the filler fitting until the MAX mark is reached.",
+    "relevant_pages": [
+      127
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 38,
+    "user_input": "the airbag light came on",
+    "reference": "The airbag warning light indicates a fault in the airbag system. Contact a Fiat Dealership as soon as possible to have the system checked.",
+    "relevant_pages": [
+      43
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 39,
+    "user_input": "there's a circle with dots on the sides on my dashboard",
+    "reference": "The circle with dots indicates brake pad wear. The warning light comes on when the front brake pads are worn. Change them as soon as possible.",
+    "relevant_pages": [
+      53
+    ],
+    "category": "icon",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 40,
+    "user_input": "my headlights are not working",
+    "reference": "If external lights are not working the external light failure warning light may come on. Check the fuses and replace any faulty bulbs. Contact a Fiat Dealership if the problem persists.",
+    "relevant_pages": [
+      53,
+      90,
+      99
+    ],
+    "category": "component",
+    "enrichment_expected": true
+  },
+  {
+    "query_n": 41,
+    "user_input": "there is water in my diesel filter",
+    "reference": "Water in the diesel filter is indicated by a dedicated warning light. The presence of water may severely damage the injection system. Contact a Fiat Dealership as soon as possible to have the filter bled.",
+    "relevant_pages": [
+      53,
+      54
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 42,
+    "user_input": "my car doors won't unlock with the remote",
+    "reference": "If the remote control does not unlock the doors check the battery of the key. Doors can also be unlocked manually by inserting and rotating the metal insert in the driver door lock anticlockwise.",
+    "relevant_pages": [
+      11,
+      13
+    ],
+    "category": "component",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 43,
+    "user_input": "the fuel reserve light is on",
+    "reference": "The fuel reserve warning light switches on when approximately 7 litres of fuel remain in the tank. Refuel as soon as possible. If the warning light flashes while driving, this indicates a system failure — contact a Fiat Dealership to have it checked.",
+    "relevant_pages": [
+      53
+    ],
+    "category": "icon",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 44,
+    "user_input": "my windscreen wipers stopped working",
+    "reference": "If the windscreen wipers are not working check the relevant fuse in the dashboard fuse box. Do not travel with an empty windscreen washer fluid reservoir. Contact a Fiat Dealership if the problem persists.",
+    "relevant_pages": [
+      22,
+      130
+    ],
+    "category": "component",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 45,
+    "user_input": "how do I open the windows from inside the car?",
+    "reference": "To open and close the electric windows from inside the car, ensure the ignition key is turned to MAR, though the windows will also operate for about two minutes after turning the key to STOP or removing it as long as no doors are opened. You can control the windows using the buttons on the door panel trim by pushing the corresponding button down to open the window and lifting it up to close it. Briefly pressing or lifting the button will move the window in short stages, while holding it for more than half a second activates automatic continuous operation, which can be stopped at your desired position by pressing the button again. The driver's side door panel features controls for all windows, along with a dedicated button to enable or disable the rear door window controls.",
+    "relevant_pages": [
+      25,
+      26
+    ],
+    "category": "component",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 46,
+    "user_input": "how do I open the windows from outside the car?",
+    "reference": "To open or close the windows from outside the car, press and hold the unlocking or locking button on the remote control key for more than two seconds, provided your vehicle is equipped with this feature. All windows will move simultaneously for as long as you hold the button down, and they will stop either when they are fully open or closed, or as soon as you release the button.",
+    "relevant_pages": [
+      26
+    ],
+    "category": "component",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 47,
+    "user_input": "how do I refuel?",
+    "reference": "Before refuelling, always ensure the engine is stopped. For petrol or diesel vehicles, pull the flap outwards, undo the cap using the ignition key if required, secure it to the flap using the loss prevention strap, and insert the dispenser. After refuelling, wait at least ten seconds before removing the dispenser to allow the fuel to flow into the tank, and then close the flap. If you have an LPG version, you must engage the handbrake, turn the ignition key to STOP, open the access flap and cap, and hand the suitable filling adapter to the refuelling operator while ensuring there is no smoking. For Natural Power methane versions, turn the cap counterclockwise to access the universal-type filler, which is compatible with Italian and NGV1 standards.",
+    "relevant_pages": [
+      90,
+      91
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 48,
+    "user_input": "how do I change a tyre?",
+    "reference": "To change a wheel, stop the vehicle in a safe, flat area, switch off the engine, engage the handbrake, put the car in first gear or reverse, and put on a reflective safety jacket before exiting. Open the luggage compartment to retrieve the toolbox and space-saver wheel by lifting the mat and unscrewing the locking device. Use the provided spanner to loosen the fixing bolts by about one turn, then position the jack so its upper part fits correctly into the vehicle's retaining device. After warning any bystanders to stay clear, use the jack handle to raise the vehicle until the wheel is a few centimetres above the ground. Remove the wheel cap if your vehicle has one, fully unscrew the remaining bolts, and pull the flat wheel off. Ensuring the hub's contact surfaces are clean, fit the space-saver wheel by twisting the first bolt two threads into the hole closest to the valve, aligning the hub cap, and then fully tightening all the fixing bolts. Lower the vehicle with the jack handle, remove the jack, and use the wrench to fully tighten the bolts by alternating from one bolt to the opposite one. Finally, stow the flat wheel and your tools securely back into the luggage compartment.",
+    "relevant_pages": [
+      103,
+      104
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 49,
+    "user_input": "when should I check the car",
+    "reference": "You should check your car every 1,000 km or before taking long journeys to inspect the tyre pressure and condition, lighting system, wiper blades, and fluid levels for the engine coolant, brakes, and screen washer. You also need to check and top up the engine oil level every 3,000 km. Beyond these periodic checks, you must adhere to the Scheduled Servicing Plan for comprehensive dealership services at fixed distance and time intervals. However, you should carry out servicing checks more frequently than scheduled if the car is subject to demanding use, such as towing a trailer, driving on dusty roads, making repeated short journeys in sub-zero temperatures, frequently idling, or remaining inactive for long periods.",
+    "relevant_pages": [
+      113
+    ],
+    "category": "technical",
+    "enrichment_expected": false
+  },
+  {
+    "query_n": 50,
+    "user_input": "there is a battery light on my dashboard",
+    "reference": "The low battery charge warning light normally illuminates when the ignition key is turned to the MAR position and should go out as soon as the engine is started, although a brief delay is acceptable while the engine is idling. If the warning light stays on constantly or flashes, occasionally accompanied by a message on the display depending on your vehicle version, you should contact a Fiat Dealership for assistance.",
+    "relevant_pages": [
+      44
+    ],
+    "category": "icon",
+    "enrichment_expected": false
+  }
+]
