@@ -1,0 +1,13 @@
+openai-whisper
+unstructured[pdf]
+pymupdf
+imagehash
+chromadb
+rank-bm25
+sentence-transformers
+transformers
+bitsandbytes
+accelerate
+ragas
+scipy
+numpy
