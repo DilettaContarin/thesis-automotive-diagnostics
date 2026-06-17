@@ -11,3 +11,5 @@ accelerate
 ragas
 scipy
 numpy
+pillow
+pandas
