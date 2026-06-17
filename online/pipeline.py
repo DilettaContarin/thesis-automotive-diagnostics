@@ -39,6 +39,7 @@ import retrieval as ret
 from query_analysis import clean_query, enrich_query
 from generation import generate
 from tts import speak_and_play
+from asr import transcribe
 
 
 # ── Paths (edit or override via environment variables) ───────────────────────
