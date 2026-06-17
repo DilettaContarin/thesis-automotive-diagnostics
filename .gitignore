@@ -1,0 +1,9 @@
+chroma_db/
+*.wav
+*.mp3
+__pycache__/
+*.pyc
+.env
+evaluation_results.json    # large, generated
+latency_records.json       # generated
+label_mapping.json         # keep private, never commit
