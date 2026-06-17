@@ -22,7 +22,7 @@ Three experimental conditions (for evaluation):
 Usage:
     from pipeline import pipeline, load_vehicle
 
-    load_vehicle("punto_2017")
+    load_vehicle("punto")
     pipeline(query="my car won't start")
     pipeline(audio_path="recording.mp3", speak_answer=True)
 """
@@ -160,9 +160,9 @@ def print_timings(timings):
 # ── Display utilities ─────────────────────────────────────────────────────────
 
 def print_results(label, results_dict, show_scores=True):
-    print(f"\n{'='*65}")
+    print(f"\n")
     print(f"  {label}")
-    print(f"{'='*65}")
+    print(f"\n")
     for stage in ["bm25", "dense", "rrf", "reranked"]:
         if stage not in results_dict:
             continue
@@ -175,9 +175,9 @@ def print_results(label, results_dict, show_scores=True):
 
 
 def print_answer(label, answer):
-    print(f"\n{'='*65}")
+    print(f"\n")
     print(f"  ANSWER — {label}")
-    print(f"{'='*65}")
+    print(f"\n")
     print(answer)
 
 
@@ -227,7 +227,7 @@ def pipeline(
 
         print(f"Transcribing: {audio_path}")
         with _timer("asr", timings):
-            model_asr = whisper.load_model("medium", device="cuda")
+            model_asr = whisper.load_model("small", device="cuda")
             result    = model_asr.transcribe(
                 audio_path,
                 language       = "en",
@@ -311,7 +311,7 @@ def pipeline(
 
     # ── Stage 6: TTS ─────────────────────────────────────────────────────────
     if speak_answer and best_answer:
-        print("\n🔊 Speaking answer...")
+        print("\n Speaking answer...")
         speak_and_play(best_answer)
 
     # ── Latency summary ───────────────────────────────────────────────────────
