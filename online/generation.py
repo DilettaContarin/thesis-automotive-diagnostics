@@ -18,10 +18,6 @@ Design choices:
   - Page-level citations: every retrieved chunk is labelled with its source
     page, enabling users to verify answers against the original manual.
 
-GPU memory note:
-  Mistral-7B and Whisper cannot coexist in T4 VRAM simultaneously.
-  Load models sequentially: run ASR first, then free Whisper before loading
-  Mistral, or load Mistral first and handle ASR in a separate session.
 """
 
 import torch
