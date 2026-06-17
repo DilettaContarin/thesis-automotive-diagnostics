@@ -1,0 +1,151 @@
+"""
+synonym_map.py
+--------------
+Hand-curated vocabulary enrichment dictionary for automotive diagnostics.
+
+Maps colloquial user language to technical manual terminology across three categories:
+  1. Component synonyms    — casual names for car parts → manual terminology
+  2. Symptom descriptions  — informal fault descriptions → technical equivalents
+  3. Icon visual descriptions — what users say when they see a dashboard symbol
+                               → the icon's official label (already injected into chunks)
+
+Design principles:
+  - Append-only enrichment: original query is preserved, technical terms added at end
+  - No verb enrichment: "check", "fix", "replace" excluded (risk of changing meaning)
+  - Vehicle-agnostic: component and symptom maps apply to any vehicle
+  - Icon descriptions are Punto-specific; extend for other vehicles as needed
+  - Ambiguous icons handled explicitly (e.g. exclamation in triangle ≠ in circle)
+
+To extend for a new vehicle: add entries to the relevant category below.
+No code changes required — just add key-value pairs to the dict.
+"""
+
+SYNONYM_MAP = {
+    # ── COMPONENTS (vehicle-agnostic) ─────────────────────────────────────────
+    "gearbox":                          ["transmission", "dualogic", "gearbox fault light"],
+    "gear box":                         ["transmission", "dualogic", "gearbox fault light"],
+    "gear with exclamation":            ["transmission", "dualogic", "gearbox fault light"],
+    "parking brake":                    ["handbrake"],
+    "boot":                             ["luggage compartment"],
+    "trunk":                            ["luggage compartment"],
+    "blinker":                          ["direction indicator"],
+    "turn signal":                      ["direction indicator"],
+    "ac":                               ["air conditioning", "climate control"],
+    "air con":                          ["air conditioning", "climate control"],
+    "aircon":                           ["air conditioning", "climate control"],
+    "rev counter":                      ["tachometer"],
+    "rpm gauge":                        ["tachometer"],
+    "shift":                            ["gearbox"],
+
+    # ── SYMPTOMS (vehicle-agnostic) ───────────────────────────────────────────
+    "won't start":                      ["engine starting failure"],
+    "wont start":                       ["engine starting failure"],
+    "doesn't start":                    ["engine starting failure"],
+    "doesnt start":                     ["engine starting failure"],
+    "not starting":                     ["engine starting failure"],
+    "can't start":                      ["engine starting failure"],
+    "cant start":                       ["engine starting failure"],
+    "overheating":                      ["engine coolant temperature"],
+    "getting hot":                      ["engine coolant temperature"],
+    "too hot":                          ["engine coolant temperature"],
+    "running hot":                      ["engine coolant temperature"],
+    "making noise":                     ["abnormal noise"],
+    "strange noise":                    ["abnormal noise"],
+    "weird noise":                      ["abnormal noise"],
+    "pulling to one side":              ["steering"],
+    "drifting":                         ["steering"],
+    "turning":                          ["steering"],
+    "drinking fuel":                    ["fuel consumption"],
+    "using too much fuel":              ["fuel consumption"],
+    "high fuel use":                    ["fuel consumption"],
+    "stalling":                         ["engine stalling", "ignition malfunction", "Fuel cut-off"],
+    "cutting out":                      ["engine stalling", "ignition malfunction", "Fuel cut-off"],
+    "dying":                            ["engine stalling", "ignition malfunction", "Fuel cut-off"],
+    "squeaking":                        ["vibration", "noise", "pulsating"],
+    "squealing":                        ["vibration", "noise", "pulsating"],
+    "shaking":                          ["vibration", "noise", "pulsating"],
+    "shuddering":                       ["vibration", "noise", "pulsating"],
+    "vibrating":                        ["vibration", "noise", "pulsating"],
+    "flat tyre":                        ["tyre pressure", "tyre"],
+    "puncture":                         ["tyre pressure", "tyre"],
+    "blowout":                          ["tyre pressure", "tyre"],
+    "tyres wearing":                    ["tyre pressure", "tyre"],
+    "wearing unevenly":                 ["tyre pressure", "tyre"],
+    "smoke":                            ["engine smoke", "overheating", "cooling", "emergency"],
+    "smoking":                          ["engine smoke", "overheating", "cooling", "emergency"],
+    "grinding":                         ["brake pad wear"],
+    "smell":                            ["leak", "overheating"],
+    "not working":                      ["replacing", "replacement"],
+    "leak":                             ["check fluid"],
+
+    # ── ICON VISUAL DESCRIPTIONS (Punto-specific, extend for other vehicles) ──
+    "spanner":                                   ["scheduled servicing"],
+    "wrench symbol":                             ["scheduled servicing"],
+    "tool icon":                                 ["scheduled servicing"],
+    "handbrake warning":                         ["handbrake"],
+    "oil can":                                   ["insufficient engine oil pressure light"],
+    "oil symbol":                                ["insufficient engine oil pressure light"],
+    "oil drop":                                  ["insufficient engine oil pressure light"],
+    "oil light":                                 ["insufficient engine oil pressure light"],
+    "oil can with waves":                        ["engine oil minimum level light"],
+    "oil drop over water":                       ["engine oil minimum level light"],
+    "oil symbol with waves":                     ["engine oil minimum level light"],
+    "exclamation mark in triangle":              ["general failure warning light"],
+    "warning triangle":                          ["general failure warning light"],
+    "triangle with exclamation":                 ["general failure warning light"],
+    "exclamation mark in circle":                ["low brake fluid handbrake engaged light"],
+    "circle with exclamation":                   ["low brake fluid handbrake engaged light"],
+    "round exclamation":                         ["low brake fluid handbrake engaged light"],
+    "seatbelt":                                  ["seat belts not fastened light"],
+    "belt symbol":                               ["seat belts not fastened light"],
+    "car with lock":                             ["fiat code system failure light"],
+    "car with padlock":                          ["fiat code system failure light"],
+    "car with a padlock symbol":                 ["fiat code system failure light"],
+    "snowflake":                                 ["possible ice on road light"],
+    "ice symbol":                                ["possible ice on road light"],
+    "ice icon":                                  ["possible ice on road light"],
+    "abs circle exclamation":                    ["EBD failure light"],
+    "steering wheel exclamation":                ["dualdrive electric power steering system failure"],
+    "wheel with exclamation":                    ["dualdrive electric power steering system failure"],
+    "car going uphill":                          ["hill holder system failure"],
+    "car in circle going up":                    ["hill holder system failure"],
+    "filter with smoke":                         ["DPF cleaning particulate trap"],
+    "particles blowing through":                 ["DPF cleaning particulate trap"],
+    "air blowing through box":                   ["DPF cleaning particulate trap"],
+    "p with radar waves":                        ["parking sensor failure light"],
+    "p with signal waves":                       ["parking sensor failure light"],
+    "huge p with wifi":                          ["parking sensor failure light"],
+    "fuel pump with drops":                      ["water in diesel filter"],
+    "gas pump with liquid dripping":             ["water in diesel filter"],
+    "light bulb exclamation":                    ["external lights failure"],
+    "circle with dots":                          ["brake pad wear"],
+    "circle with dots on the sides":             ["brake pad wear"],
+    "horseshoe with exclamation":                ["tyre pressure warning itpms"],
+    "horseshoe shape with an exclamation mark":  ["tyre pressure warning itpms"],
+    "flat tire light":                           ["tyre pressure warning itpms"],
+    "bowl with exclamation":                     ["tyre pressure warning itpms"],
+    "person with circle x":                      ["passenger side airbag deactivated"],
+    "airbag light two":                          ["passenger side airbag deactivated"],
+    "passenger airbag":                          ["passenger side airbag deactivated"],
+    "light with vertical line":                  ["rear fog light"],
+    "light lines left vertical":                 ["front fog lights"],
+    "speedometer icon":                          ["cruise control"],
+    "dial with needle":                          ["cruise control"],
+    "two headlights":                            ["side lights dipped beam headlights"],
+    "headlight going left":                      ["main beam headlights"],
+    "high beam":                                 ["main beam headlights"],
+    "lpg failure":                               ["lpg system failure"],
+    "fuel pump lpg":                             ["lpg system failure"],
+    "cng":                                       ["methane system failure"],
+    "methane":                                   ["methane system failure"],
+    "check engine light":                        ["injection eobd system failure"],
+    "engine light":                              ["injection eobd system failure"],
+    "engine warning":                            ["injection eobd system failure"],
+    "engine shaped light":                       ["injection eobd system failure"],
+    "abs light":                                 ["abs failure light"],
+    "abs written":                               ["abs failure light"],
+    "airbag light":                              ["air bag failure"],
+    "person with circle":                        ["air bag failure"],
+    "car with skid marks":                       ["esc system failure"],
+    "blue headlight":                            ["main beam headlights"],
+}
