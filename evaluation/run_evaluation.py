@@ -20,7 +20,7 @@ Usage:
         --ground_truth  evaluation/ground_truth.json \
         --output        data/evaluation_results.json \
         --latency       data/latency_records.json \
-        --vehicle       punto_2017
+        --vehicle       punto
 """
 
 import json
