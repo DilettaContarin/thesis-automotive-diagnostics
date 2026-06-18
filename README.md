@@ -20,3 +20,6 @@ python evaluation/metrics.py --ground_truth evaluation/ground_truth.json --resul
 
 ## Notebooks
 the notebooks provided either reproduce the thesis results and analisys of latency measures or can be useful when testing
+
+## Data
+in this folder the manual chunks used for testing can be found alongside the json files of the icons coordinates
