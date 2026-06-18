@@ -23,7 +23,7 @@ _model_asr = None
 
 
 def get_model(device="cuda"):
-    """Load Whisper once and reuse. Idempotent — safe to call multiple times."""
+    """Load Whisper once and reuse."""
     global _model_asr
     if _model_asr is None:
         print(f"Loading Whisper {MODEL_SIZE}...")
