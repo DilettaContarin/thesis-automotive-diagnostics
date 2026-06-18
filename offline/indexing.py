@@ -12,7 +12,7 @@ Usage:
     python indexing.py \
         --chunks   path/to/chunks.json \
         --chroma   path/to/chroma_db/ \
-        --vehicle  punto_2017
+        --vehicle  punto
 """
 
 import json
