@@ -111,9 +111,9 @@ def print_summary(scores, k_values=(1, 3, 5)):
 
     for cond in conditions:
         score_list = scores[cond]
-        print(f"\n{'='*55}")
+        print(f"\n")
         print(f"  {cond.upper()}")
-        print(f"{'='*55}")
+        print(f"\n")
         print(f"  MRR:           {np.mean([s['rr'] for s in score_list]):.4f}")
         for k in k_values:
             rec  = np.mean([s[f"recall@{k}"]    for s in score_list])
@@ -127,9 +127,9 @@ def print_category_breakdown(scores, k_values=(1, 3, 5)):
     categories = sorted(set(s["category"] for sl in scores.values() for s in sl))
 
     for cond in conditions:
-        print(f"\n{'='*55}")
+        print(f"\n")
         print(f"  {cond.upper()} — by category")
-        print(f"{'='*55}")
+        print(f"\n")
         for cat in categories:
             cat_scores = [s for s in scores[cond] if s["category"] == cat]
             if not cat_scores:
