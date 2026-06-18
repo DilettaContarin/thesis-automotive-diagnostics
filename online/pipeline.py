@@ -149,9 +149,9 @@ def _timer(label, timings_dict):
 
 def print_timings(timings):
     total = sum(timings.values())
-    print(f"\n{'='*65}")
+    print(f"\n")
     print("  LATENCY BREAKDOWN")
-    print(f"{'='*65}")
+    print(f"\n")
     for stage, t in timings.items():
         bar = "█" * int((t / total) * 30) if total > 0 else ""
         print(f"  {stage:<30} {t:.3f}s  {bar}")
