@@ -1,0 +1,18 @@
+{
+  "name": "icon_958",
+  "description": "Methane system failure light (cng)",
+  "def_page": 57,
+  "n_occurrences": 1,
+  "occurrences": [
+    {
+      "page": 57,
+      "rect": [
+        83.38300323486328,
+        199.65599060058594,
+        89.05500030517578,
+        207.21299743652344
+      ],
+      "n_paths": 16
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "icon_959",
+  "description": "Possible ice on road light",
+  "def_page": 57,
+  "n_occurrences": 1,
+  "occurrences": [
+    {
+      "page": 57,
+      "rect": [
+        77.24400329589844,
+        269.82000732421875,
+        95.1030044555664,
+        289.5460205078125
+      ],
+      "n_paths": 88
+    }
+  ]
+}
