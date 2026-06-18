@@ -25,7 +25,6 @@ Session state (managed by pipeline.py):
 import json
 import numpy as np
 import chromadb
-from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer, CrossEncoder
 
 
