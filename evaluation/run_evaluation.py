@@ -74,10 +74,10 @@ def run_evaluation(
     Saves incrementally after every query so Colab crashes don't lose progress.
     """
     # Import here to avoid circular dependency when used as a module
-    from pipeline import load_vehicle, check_vehicle
-    from retrieval import retrieve_all, rerank
-    from generation import generate
-    from query_analysis import enrich_query
+    from online/pipeline import load_vehicle, check_vehicle
+    from online/retrieval import retrieve_all, rerank
+    from online/generation import generate
+    from online/query_analysis import enrich_query
 
     if not check_vehicle():
         return
