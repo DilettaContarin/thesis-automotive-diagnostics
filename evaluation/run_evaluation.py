@@ -30,7 +30,7 @@ import argparse
 import numpy as np
 
 
-# ── Timing utility ────────────────────────────────────────────────────────────
+# ── Timing utility ───────────────────────────────────────────────────────────
 
 class _Timer:
     def __init__(self, label, timings_dict):
