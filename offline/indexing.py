@@ -5,8 +5,7 @@ Embeds vehicle manual chunks and stores them in a ChromaDB vector collection.
 
 Reads chunks.json produced by chunking.py and builds the dense vector index
 used for semantic retrieval at query time. The BM25 index is NOT built here
-— it is rebuilt from chunks.json at session startup in the online pipeline
-(rebuilding takes ~2 seconds and BM25 cannot be persisted).
+— it is rebuilt from chunks.json at session startup in the online pipeline.
 
 Usage:
     python indexing.py \
