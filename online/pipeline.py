@@ -75,7 +75,7 @@ def load_vehicle(vehicle_name):
 
     Args:
         vehicle_name (str): must match both a chunks JSON file and a
-                            ChromaDB collection name (e.g. "punto_2017")
+                            ChromaDB collection name (e.g. "punto")
     """
     global current_vehicle
 
@@ -119,7 +119,7 @@ def check_vehicle():
     global current_vehicle
     if current_vehicle is not None:
         return True
-    vehicle = input("Please specify your vehicle (e.g. 'punto_2017'): ").strip()
+    vehicle = input("Please specify your vehicle (e.g. 'punto'): ").strip()
     if vehicle:
         load_vehicle(vehicle)
         return True
