@@ -39,7 +39,7 @@ import retrieval as ret
 from query_analysis import clean_query, enrich_query
 from generation import generate
 from tts import speak_and_play
-from asr import transcribe
+from online.asr import transcribe as asr_transcribe
 
 
 # ── Paths (edit or override via environment variables) ───────────────────────
@@ -221,23 +221,10 @@ def pipeline(
 
     # ── Stage 1: ASR ──────────────────────────────────────────────────────────
     if audio_path is not None:
-        try:
-            import whisper
-        except ImportError:
-            raise ImportError("openai-whisper not installed. Run: pip install openai-whisper")
-
         print(f"Transcribing: {audio_path}")
         with _timer("asr", timings):
-            model_asr = whisper.load_model("small", device="cuda")
-            result    = model_asr.transcribe(
-                audio_path,
-                language       = "en",
-                initial_prompt = "Automotive diagnostic report. Car problems, warning lights, engine issues.",
-                fp16           = True,
-            )
-            raw_query = result["text"].strip()
+            raw_query = asr_transcribe(audio_path)
         print(f"Transcript: {raw_query}")
-
     elif query is not None:
         raw_query = query
     else:
