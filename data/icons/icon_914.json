@@ -1,0 +1,18 @@
+{
+  "name": "icon_914",
+  "description": "Dualogic gearbox fault light",
+  "def_page": 47,
+  "n_occurrences": 1,
+  "occurrences": [
+    {
+      "page": 47,
+      "rect": [
+        61.37300109863281,
+        77.65099334716797,
+        82.84700012207031,
+        99.15099334716797
+      ],
+      "n_paths": 54
+    }
+  ]
+}

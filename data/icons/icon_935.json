@@ -1,0 +1,18 @@
+{
+  "name": "icon_935",
+  "description": "Parking sensor failure light",
+  "def_page": 53,
+  "n_occurrences": 1,
+  "occurrences": [
+    {
+      "page": 53,
+      "rect": [
+        58.79300308227539,
+        56.967987060546875,
+        85.12300109863281,
+        72.93698120117188
+      ],
+      "n_paths": 28
+    }
+  ]
+}

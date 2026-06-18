@@ -1,0 +1,18 @@
+{
+  "name": "icon_906",
+  "description": "Engine oil minimum level light",
+  "def_page": 43,
+  "n_occurrences": 1,
+  "occurrences": [
+    {
+      "page": 43,
+      "rect": [
+        53.81999969482422,
+        191.49600219726562,
+        90.09500122070312,
+        227.77099609375
+      ],
+      "n_paths": 4
+    }
+  ]
+}
