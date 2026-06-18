@@ -5,10 +5,10 @@ import os
 # ── Paths (edit these) ────────────────────────────────────────────────────────
 EVAL_RESULTS_PATH = "/content/drive/MyDrive/evaluation_results.json"
 OUTPUT_FORM_PATH  = "/content/drive/MyDrive/form_ready.json"
-MAPPING_PATH      = "/content/drive/MyDrive/label_mapping.json"  # keep private!
+MAPPING_PATH      = "/content/drive/MyDrive/label_mapping.json"  
 # ─────────────────────────────────────────────────────────────────────────────
 
-random.seed(42)  # fixed seed → reproducible randomisation
+random.seed(42)  
 
 with open(EVAL_RESULTS_PATH, encoding="utf-8") as f:
     results = json.load(f)
@@ -62,7 +62,7 @@ print(f"Form-ready file saved → {OUTPUT_FORM_PATH}")
 print(f"Label mapping saved   → {MAPPING_PATH}  (keep private!)")
 print(f"Total queries:          {len(form_entries)}")
 
-# Quick sanity check — print first entry
+# Quick sanity check
 entry = form_entries[0]
 print(f"\nSample — {entry['query_key']}: {entry['user_input']}")
 print(f"  A = {label_map[entry['query_key']]['A']}")
