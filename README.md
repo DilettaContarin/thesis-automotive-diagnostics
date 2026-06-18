@@ -27,7 +27,11 @@ python online/pipeline.py --vehicle punto --audio recording.mp3 --speak
 ## Evaluation
 
 python evaluation/run_evaluation.py --ground_truth evaluation/ground_truth.json --output data/evaluation_results.json --latency   data/latency_records.json --vehicle punto  
-python evaluation/metrics.py --ground_truth evaluation/ground_truth.json --results data/evaluation_results.json  
+python evaluation/metrics.py --ground_truth evaluation/ground_truth.json --results data/evaluation_results.json
+```bash
+python evaluation/run_evaluation.py --ground_truth evaluation/ground_truth.json --output data/evaluation_results.json --latency data/latency_records.json --vehicle punto
+python evaluation/metrics.py --ground_truth evaluation/ground_truth.json --results data/evaluation_results.json
+```
 
 ## Notebooks
 
