@@ -240,7 +240,7 @@ if __name__ == "__main__":
     parser.add_argument("--ground_truth", required=True)
     parser.add_argument("--output",       required=True, help="Path for evaluation_results.json")
     parser.add_argument("--latency",      required=True, help="Path for latency_records.json")
-    parser.add_argument("--vehicle",      required=True, help="Vehicle name (e.g. punto_2017)")
+    parser.add_argument("--vehicle",      required=True, help="Vehicle name (e.g. punto)")
     parser.add_argument("--top_k",        type=int, default=5)
     args = parser.parse_args()
 
