@@ -12,13 +12,6 @@ Privacy note:
   Cloud-based alternatives (e.g. gTTS) were rejected because they
   transmit query/response data to external servers.
 
-Production deployment:
-  Replace espeak with pyttsx3 (OS-native, offline) or Coqui TTS
-  (neural, significantly better voice quality, still offline) for
-  more natural speech output while preserving the local design.
-
-Installation (Linux / Google Colab):
-  apt-get install -y espeak espeak-data libespeak1
 """
 
 import subprocess
