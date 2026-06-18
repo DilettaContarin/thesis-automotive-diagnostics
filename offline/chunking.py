@@ -12,7 +12,7 @@ Usage:
         --pdf      path/to/manual.pdf \
         --icons    path/to/icons_dir/ \
         --output   path/to/chunks.json \
-        --vehicle  punto_2017
+        --vehicle  punto
 """
 
 import json
