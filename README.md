@@ -19,4 +19,4 @@ python evaluation/run_evaluation.py --ground_truth evaluation/ground_truth.json 
 python evaluation/metrics.py --ground_truth evaluation/ground_truth.json --results data/evaluation_results.json  
 
 ## Notebooks
-the provided notebooks reproduce the thesis results and analisys of latency measures
+the notebooks provided either reproduce the thesis results and analisys of latency measures or can be useful when testing
