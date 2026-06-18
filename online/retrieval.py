@@ -22,9 +22,7 @@ Session state (managed by pipeline.py):
   Call load_vehicle() from pipeline.py before any retrieval function.
 """
 
-import json
 import numpy as np
-import chromadb
 from sentence_transformers import SentenceTransformer, CrossEncoder
 
 
